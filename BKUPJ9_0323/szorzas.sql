@@ -1,0 +1,1 @@
+SELECT 10 * 20 FROM dual;

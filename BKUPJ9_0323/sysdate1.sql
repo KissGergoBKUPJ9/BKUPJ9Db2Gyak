@@ -1,0 +1,1 @@
+select to_char(TRUNC(SYSDATE), 'YYYY-MM-DD') FROM DUAL;

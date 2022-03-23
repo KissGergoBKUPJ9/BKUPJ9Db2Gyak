@@ -1,0 +1,1 @@
+SELECT 10023 + 25 FROM dual;
