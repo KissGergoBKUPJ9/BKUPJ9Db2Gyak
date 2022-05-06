@@ -1,0 +1,1 @@
+select getavgraktarkeszlet(3) from dual

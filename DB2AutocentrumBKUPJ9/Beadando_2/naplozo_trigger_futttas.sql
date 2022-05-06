@@ -1,0 +1,1 @@
+update beszallito set cegnev = 'Toyota Hungária Bt' where id = 1;

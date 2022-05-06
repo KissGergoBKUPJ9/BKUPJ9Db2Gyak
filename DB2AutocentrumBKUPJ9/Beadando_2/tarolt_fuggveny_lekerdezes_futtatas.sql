@@ -1,0 +1,1 @@
+select getBeszallito(7) from dual;

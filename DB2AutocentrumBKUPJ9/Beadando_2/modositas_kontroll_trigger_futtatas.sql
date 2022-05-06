@@ -1,0 +1,1 @@
+update beszallito set raktarkeszlet = 500 where id = 10;

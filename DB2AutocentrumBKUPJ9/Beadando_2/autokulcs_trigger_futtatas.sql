@@ -1,0 +1,1 @@
+insert into beszallito(cegnev, szekhely, raktarkeszlet, szallitas) values ('Ford Hungaria Bt.', 'Budapest, Fõ út 101.', 110, to_date('2022.05.12', 'yyyy.mm.dd'))
