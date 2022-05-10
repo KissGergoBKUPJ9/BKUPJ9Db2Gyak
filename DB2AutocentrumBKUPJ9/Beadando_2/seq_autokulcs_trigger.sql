@@ -1,2 +1,2 @@
-create sequence seq1
+create sequence seq5
 start with 10;

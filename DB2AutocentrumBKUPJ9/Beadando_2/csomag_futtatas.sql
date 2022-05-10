@@ -1,4 +1,4 @@
 begin
-csomag1.UjBeszallito(10, 'Lada Hungaria Bt.', 'Budapest, Fõ út 102.', 115, to_date('2022.05.13', 'yyyy.mm.dd'));
+csomag2.UjVasarlo(8485825970, 'Próba Xavér', 'Szerencs, Fõ út 101.', to_date('1998.01.12', 'yyyy.mm.dd'),'jdc761');
 end;
 

@@ -1,19 +1,15 @@
-create or replace package body csomag1 as
+create or replace package body csomag2 as
 procedure UjBeszallito(rid integer,cegnev char, szekhely char, raktar integer, szallitas date) as
 begin
+if raktar <= 0 then dbms_output.put_line('Az adószám nem lehet 0');
+else
 insert into beszallito values(rid, cegnev, szekhely, raktar, szallitas);
+end if;
 end;
-procedure UjVasarlo(adosz long, nev char, lakhely char,szulido date) as
+procedure UjVasarlo(adosz number, nev char, lakhely char,szulido date,autorsz char) as
 perror exception;
 begin
-if adoszam = 0 then
-raise perror;
-else
-insert into vasarlo values(adosz, nev, lakhely,szulido);
-end if;
-exception
-when perror then
-dbms_output.put_line('Az adószám nem lehet 0');
+insert into vasarlo values(adosz, nev, lakhely,szulido,autorsz);
 end;
 function getBeszallito(getbid in integer) return varchar as
 x beszallito.cegnev%type;
@@ -38,4 +34,5 @@ select avg(raktarkeszlet) into x from beszallito where bid = id;
 vi:='Az átlag raktárkészlet: '||x;
 end if;
 return vi;
+end;
 end;

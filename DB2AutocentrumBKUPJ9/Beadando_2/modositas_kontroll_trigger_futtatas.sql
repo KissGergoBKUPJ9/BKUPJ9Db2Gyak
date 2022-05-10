@@ -1,1 +1,1 @@
-update beszallito set raktarkeszlet = 500 where id = 10;
+update beszallito set raktarkeszlet = 100  where id = 10;
